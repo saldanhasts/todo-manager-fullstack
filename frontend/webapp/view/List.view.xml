@@ -1,0 +1,20 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="todo.controller.List">
+
+  <Page title="Tarefas">
+    <content>
+      <List
+        items="{todos>/}">
+        <StandardListItem
+          title="{todos>title}"
+          info="{= ${todos>completed} ? 'Concluída' : 'Pendente' }"
+          infoState="{= ${todos>completed} ? 'Success' : 'Warning' }"
+          type="Active"
+          press="onDetail"/>
+      </List>
+    </content>
+  </Page>
+
+</mvc:View>

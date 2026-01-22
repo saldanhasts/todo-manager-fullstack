@@ -1,0 +1,22 @@
+{
+  "sap.app": {
+    "id": "todo",
+    "type": "application"
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "todo.view.App",
+      "type": "XML"
+    },
+    "routing": {
+      "routes": [
+        { "pattern": "", "name": "list", "target": "list" },
+        { "pattern": "detail/{id}", "name": "detail", "target": "detail" }
+      ],
+      "targets": {
+        "list": { "viewName": "List" },
+        "detail": { "viewName": "Detail" }
+      }
+    }
+  }
+}

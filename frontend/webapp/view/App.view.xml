@@ -1,0 +1,16 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="todo.controller.App">
+
+  <App>
+    <pages>
+      <Page title="Todo Manager">
+        <content>
+          <NavContainer id="navContainer"/>
+        </content>
+      </Page>
+    </pages>
+  </App>
+
+</mvc:View>
